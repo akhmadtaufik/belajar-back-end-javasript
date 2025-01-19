@@ -1,0 +1,41 @@
+// .eslintrc.json
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "camelcase": "off",
+    "no-restricted-globals": "off",
+    "radix": "off",
+    "no-prototype-builtins": "off",
+    "no-undef": ["error", { "typeof": true }]
+  },
+  "globals": {
+    "process": true
+  }
+}
+
+// .editorconfig
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+[*.{js,jsx,ts,tsx,vue}]
+quote_type = single
+
+// .gitattributes
+* text=auto eol=lf
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
