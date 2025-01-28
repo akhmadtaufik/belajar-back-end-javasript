@@ -1,3 +1,5 @@
 node_modules
+notes-app.pem
+notes_app.pem
 .env
 .prod.env
